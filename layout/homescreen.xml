@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/display_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/first_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display_name"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue"
+        android:text="@string/edit_locations"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/second_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_button"
+        android:textStyle="bold"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/edit_menu"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/view_orders_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_button"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/view_orders"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/account_settings_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_orders_button"
+        android:layout_marginTop="75dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue"
+        android:text="@string/account_settings"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_settings_button"
+        android:layout_marginTop="75dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue"
+        android:text="@string/logout"
+        android:textSize="25sp" />
+
+</RelativeLayout>

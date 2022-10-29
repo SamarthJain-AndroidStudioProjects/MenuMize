@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/item_view_disable_enable_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_disable_24" />
+
+    <EditText
+        android:id="@+id/left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_view_disable_enable_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:background="@null"
+        android:gravity="center"
+        android:clickable="false"
+        android:inputType="number"
+        android:focusable="false"
+        android:maxLength="12"
+        android:text="@string/disable"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/item_header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/item_delete_register_button"
+        android:layout_toEndOf="@id/item_view_disable_enable_button"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="17.5sp" />
+
+    <TextView
+        android:id="@+id/item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ms_item_line"
+        android:layout_toStartOf="@id/item_delete_register_button"
+        android:layout_toEndOf="@id/item_view_disable_enable_button"
+        android:gravity="center"
+        android:text="@string/item_enabled"
+        android:textColor="@color/green"
+        android:textSize="17.5sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/item_delete_register_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_baseline_delete_24" />
+
+    <TextView
+        android:id="@+id/right_button"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_delete_register_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ms_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/right_button"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+</RelativeLayout>
